@@ -22,3 +22,5 @@ Update `docs/index.html` and `docs/styles.css`.
 - `logo.png` — Company logo used in the website.
 - `Resume.pdf` — Resume linked from the site.
 - `Swrthy_Zero_To_Contract_Master_Plan.docx` — Master plan document linked from the site.
+
+https://queseGen.github.io/swrthy
