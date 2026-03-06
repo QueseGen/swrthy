@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SWRTHY is a mission-driven minority-owned technology company building software, communities, and impact-first products." />
+  <title>SWRTHY — Building Inclusive Tech &amp; Community</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img class="brand-logo" src="logo.png" alt="SWRTHY logo" />
+        <span class="brand-name">SWRTHY</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#mission">Mission</a>
+        <a href="#projects">Projects</a>
+        <a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-label="Hero section">
+      <div class="container">
+        <h1>Empowering diverse makers through software, design, and community.</h1>
+        <p class="lead">SWRTHY is a minority-founded parent company focused on building mission-aligned products, supporting early-stage teams, and amplifying underrepresented voices in tech.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore Projects</a>
+          <a class="button secondary" href="#support">Support Our Work</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section section--light">
+      <div class="container">
+        <h2>Our Mission</h2>
+        <p>At SWRTHY, we believe technology should be accessible, inclusive, and rooted in community. We build products, resources, and platforms that empower creators, entrepreneurs, and changemakers — especially those from underrepresented backgrounds.</p>
+        <ul class="values">
+          <li>
+            <strong>Community-first:</strong> Every decision begins with the people we serve.
+          </li>
+          <li>
+            <strong>Transparency:</strong> We share what we learn and invite collaboration.
+          </li>
+          <li>
+            <strong>Sustainability:</strong> We design for long-term impact over short-term gains.
+          </li>
+          <li>
+            <strong>Access:</strong> We prioritize tools and education for underserved creators.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Past &amp; Ongoing Projects</h2>
+        <p>Below are a few highlights from our portfolio. We build in public and welcome collaboration — if you'd like to join, reach out.</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>SWRTHY Learning Hub</h3>
+            <p>A modular, community-led learning platform that centralizes free curriculum, workshops, and mentorship for emerging technologists.</p>
+            <p class="tag">Status: In progress</p>
+          </article>
+
+          <article class="card">
+            <h3>Open Grants Dashboard</h3>
+            <p>Open-source tools and dashboards to help small teams find grant opportunities, track deadlines, and manage applications.</p>
+            <p class="tag">Status: Active</p>
+          </article>
+
+          <article class="card">
+            <h3>Inclusive Design Toolkit</h3>
+            <p>A set of UI components, accessibility guidelines, and research notes for creators building more inclusive products.</p>
+            <p class="tag">Status: Launched</p>
+          </article>
+        </div>
+
+        <p>If you have a project idea, partnership proposal, or open-source contribution, we'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section id="support" class="section section--dark">
+      <div class="container">
+        <h2>Support our work</h2>
+        <p>SWRTHY is a small, minority-owned tech company. If you'd like to support our mission, you can send a contribution via Cash App.</p>
+        <div class="support-box">
+          <p class="support-link">CashApp: <a href="https://cash.app/$swarthyfam" target="_blank" rel="noopener">$swarthyfam</a></p>
+          <p class="support-note">Every contribution helps us keep projects open, pay contributors, and build tools for the community.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>We’re always open to collaborations, speaking opportunities, and community partnerships.</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:hello@swrthy.com">hello@swrthy.com</a> (placeholder)</li>
+          <li><strong>Resume:</strong> <a href="Resume.pdf" target="_blank" rel="noopener">Download</a></li>
+          <li><strong>Master Plan:</strong> <a href="Swrthy_Zero_To_Contract_Master_Plan.docx" target="_blank" rel="noopener">Download</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> SWRTHY. Built for community and impact.</p>
+      <p class="small">This site is designed to be hosted via GitHub Pages. Drop the files in a <code>docs/</code> folder on the default branch or publish from the root.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.primary-nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
