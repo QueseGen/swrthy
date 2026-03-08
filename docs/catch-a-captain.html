@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Catch A Captain — on-demand boating app for South Florida. Built by Jacquese Wilson, Founding Engineer." />
+  <title>Catch A Captain | SWRTHY</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="logo.png" alt="SWRTHY logo" />
+        <span class="brand-name">SWRTHY</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="index.html#support">Support</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="proj-hero">
+      <div class="container">
+        <p class="section-label">Completed Project · Founding Engineer</p>
+        <h1 class="proj-title">Catch A Captain</h1>
+        <p class="proj-subtitle">On-demand boating adventures in South Florida — available on Apple iOS &amp; Google Play.</p>
+        <p class="proj-desc">Catch A Captain connects users with licensed local captains for fishing trips, sandbar excursions, and luxury yacht charters. The platform features real-time booking, live voyage tracking, Stripe payment processing, and an AI-powered document verification system. I pioneered and built this platform as the first and founding engineer.</p>
+        <div class="proj-meta-row">
+          <span class="proj-chip">iOS</span>
+          <span class="proj-chip">Android</span>
+          <span class="proj-chip">Flutter</span>
+          <span class="proj-chip">GCP / Firebase</span>
+          <span class="proj-chip">Stripe</span>
+          <span class="proj-chip">Go Fiber</span>
+          <span class="proj-chip">Document AI</span>
+          <span class="proj-chip">South Florida</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section section--light">
+      <div class="container">
+        <p class="section-label">Platform</p>
+        <h2>What it does</h2>
+        <div class="feat-grid">
+          <div class="feat-card">
+            <h3>On-Demand Booking</h3>
+            <p>Real-time connection between passengers and licensed captains. Book fishing, sandbar, or yacht experiences in minutes.</p>
+          </div>
+          <div class="feat-card">
+            <h3>Live Voyage Tracking</h3>
+            <p>GPS-powered live tracking of active trips, keeping passengers and operators informed in real time.</p>
+          </div>
+          <div class="feat-card">
+            <h3>Stripe Payments</h3>
+            <p>Multi-user Stripe integration for passenger payments and captain payouts. Captains set up accounts directly in-app. Rates range $350–$850/day.</p>
+          </div>
+          <div class="feat-card">
+            <h3>AI License Verification</h3>
+            <p>Custom Go Fiber microservice with Google Document AI — scans and verifies captain licenses and critical documents via a GUI dashboard.</p>
+          </div>
+          <div class="feat-card">
+            <h3>Experience Tiers</h3>
+            <p>Economy, luxury, and XL yacht tiers. Fishing, sandbar, and charter excursions — all bookable from one app.</p>
+          </div>
+          <div class="feat-card">
+            <h3>CI/CD Deployments</h3>
+            <p>Continuous integration workflows for iOS and Android releases. GCP Firestore backend with encrypted real-time data sync.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Auth Screens -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Authentication</p>
+        <h2>Login &amp; Signup</h2>
+        <p class="proj-section-desc">Role-based auth with optional email field and role selector for passengers and captains.</p>
+        <div class="screen-row">
+          <figure class="screen-fig">
+            <video class="screen-vid" autoplay muted loop playsinline>
+              <source src="cap/login-vid.mov" type="video/mp4" />
+              <source src="cap/login-vid.mov" type="video/quicktime" />
+            </video>
+            <figcaption>Auth flow</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/Login.png" alt="Login screen" loading="lazy" />
+            <figcaption>Login</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/Signup.png" alt="Signup screen" loading="lazy" />
+            <figcaption>Signup</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Passenger Flow -->
+    <section class="section section--light">
+      <div class="container">
+        <p class="section-label">Passenger Experience</p>
+        <h2>Finding &amp; booking a captain</h2>
+        <p class="proj-section-desc">Full end-to-end user flow — from browsing available boats to payment confirmation and live navigation.</p>
+      </div>
+      <div class="screen-scroll-wrap">
+        <div class="screen-scroll">
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/01PaxDashboard-cropped.png" alt="Passenger dashboard" loading="lazy" />
+            <figcaption>01 — Dashboard</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/02PaxBoatSelection-cropped.png" alt="Boat selection" loading="lazy" />
+            <figcaption>02 — Boat Selection</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/03PaxDestinationSelection-cropped.png" alt="Destination selection" loading="lazy" />
+            <figcaption>03 — Destination</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/04PaxDurationSelection-copy.png" alt="Duration selection" loading="lazy" />
+            <figcaption>04 — Duration</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/05PaxAwaitingConfirmation-cropped.png" alt="Awaiting confirmation" loading="lazy" />
+            <figcaption>05 — Awaiting Confirmation</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/06PaxTripAccepted-cropped.png" alt="Trip accepted" loading="lazy" />
+            <figcaption>06 — Trip Accepted</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/07PaxPaymentOptions-cropped.png" alt="Payment options" loading="lazy" />
+            <figcaption>07 — Payment Options</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/09PaxPaymentAccepted-cropped.png" alt="Payment accepted" loading="lazy" />
+            <figcaption>09 — Payment Accepted</figcaption>
+          </figure>
+          <figure class="screen-fig">
+            <img class="screen-img" src="cap/passenger-view/10PaxNavigation-cropped.png" alt="Live navigation" loading="lazy" />
+            <figcaption>10 — Live Navigation</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Captain Stripe Onboarding -->
+    <section class="section">
+      <div class="container">
+        <p class="section-label">Captain Experience</p>
+        <h2>Stripe account onboarding</h2>
+        <p class="proj-section-desc">Captains connect their Stripe accounts directly in-app to receive payments from bookings.</p>
+        <div class="vid-wrap">
+          <video class="proj-video" controls playsinline preload="metadata">
+            <source src="cap/captain-view/CatchaCaptain Onboarding UI.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Verification Dashboard -->
+    <section class="section section--light">
+      <div class="container">
+        <p class="section-label">Internal Tooling · Go Fiber + Google Document AI</p>
+        <h2>AI License Verification Dashboard</h2>
+        <p class="proj-section-desc">A custom Go Fiber GUI microservice I built to scan captain licenses and key documents — automated verification with manual inspection and override capability.</p>
+        <figure class="dash-fig">
+          <img class="dash-img" src="cap/AI-verification-Dash.png" alt="AI Verification Dashboard" loading="lazy" />
+          <figcaption>Document AI verification dashboard — Go Fiber microservice</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Back to projects -->
+    <section class="section">
+      <div class="container">
+        <a class="button secondary" href="index.html#projects">← Back to Projects</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SWRTHY. Built for community and impact.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.primary-nav');
+
+    function closeNav() {
+      nav.classList.remove('open');
+      document.body.classList.remove('nav-open');
+      menuToggle.textContent = '☰';
+    }
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeNav);
+    });
+  </script>
+</body>
+</html>
