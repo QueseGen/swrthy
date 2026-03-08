@@ -280,6 +280,101 @@ a:hover {
   color: rgba(232, 238, 247, 0.65);
 }
 
+/* ── Mission section ───────────────────────────────────── */
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.mission-lead {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  max-width: 58ch;
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+.mission-body {
+  max-width: 72ch;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.mission-vision {
+  border-left: 3px solid rgba(126, 227, 165, 0.7);
+  margin: 0 0 2.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0 12px 12px 0;
+  max-width: 68ch;
+  color: var(--muted);
+  font-style: normal;
+}
+
+.beliefs-title {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(126, 227, 165, 0.2);
+}
+
+.beliefs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.beliefs li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+  line-height: 1.5;
+}
+
+.beliefs li strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--text);
+}
+
+.beliefs li div {
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.belief-num {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+  opacity: 0.7;
+  padding-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.scripture {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: rgba(232, 238, 247, 0.4);
+  font-style: italic;
+}
+
 /* ── Featured project card ─────────────────────────────── */
 .card--featured {
   border-color: rgba(126, 227, 165, 0.35);
