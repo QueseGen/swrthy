@@ -16,11 +16,6 @@
         <span class="brand-name">SWRTHY</span>
       </a>
       <nav class="primary-nav" aria-label="Primary">
-        <div class="nav-logo-row">
-          <img class="nav-logo-img" src="logo.png" alt="SWRTHY logo" />
-          <span class="nav-logo-name">SWRTHY</span>
-        </div>
-        <button class="nav-close" aria-label="Close navigation">✕</button>
         <a href="index.html#mission">Mission</a>
         <a href="index.html#projects">Projects</a>
         <a href="resume.html">Resume</a>
@@ -30,6 +25,21 @@
       <button class="menu-toggle" aria-label="Open navigation">☰</button>
     </div>
   </header>
+
+  <nav id="mob-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mob-head">
+      <a class="mob-brand" href="index.html">
+        <img src="logo.png" alt="SWRTHY logo" />
+        <span>SWRTHY</span>
+      </a>
+      <button id="mob-close" aria-label="Close navigation">✕</button>
+    </div>
+    <a href="index.html#mission">Mission</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="index.html#support">Support</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
 
   <main>
 
@@ -203,25 +213,16 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navClose = document.querySelector('.nav-close');
-    const nav = document.querySelector('.primary-nav');
+    var tog = document.querySelector('.menu-toggle');
+    var mob = document.getElementById('mob-nav');
+    var cls = document.getElementById('mob-close');
 
-    function closeNav() {
-      nav.classList.remove('open');
-      document.body.classList.remove('nav-open');
-    }
+    function openMob() { mob.classList.add('open'); mob.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+    function closeMob() { mob.classList.remove('open'); mob.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
 
-    menuToggle.addEventListener('click', () => {
-      nav.classList.add('open');
-      document.body.classList.add('nav-open');
-    });
-
-    navClose.addEventListener('click', closeNav);
-
-    nav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeNav);
-    });
+    tog.onclick = openMob;
+    cls.onclick = closeMob;
+    mob.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMob); });
   </script>
 </body>
 </html>
