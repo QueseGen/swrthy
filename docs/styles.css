@@ -427,6 +427,21 @@ a:hover {
   color: var(--muted);
 }
 
+.card-screens {
+  display: flex;
+  gap: 0.6rem;
+  margin: 0.85rem 0;
+  overflow-x: auto;
+}
+
+.card-screens img {
+  height: 120px;
+  width: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
 .card-details {
   margin-top: 0.75rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
