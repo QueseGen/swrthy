@@ -291,18 +291,19 @@ a:hover {
 }
 
 .mission-lead {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--text);
+  font-size: 0.88rem;
+  color: var(--muted);
   max-width: 58ch;
   margin: 0 0 1.25rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .mission-body {
+  font-size: 0.88rem;
   max-width: 72ch;
   color: var(--muted);
   margin: 0 0 1.5rem;
+  line-height: 1.6;
 }
 
 .mission-vision {
@@ -336,9 +337,6 @@ a:hover {
 }
 
 .beliefs li {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 14px;
@@ -346,25 +344,24 @@ a:hover {
   line-height: 1.5;
 }
 
-.beliefs li strong {
-  display: block;
-  margin-bottom: 0.2rem;
-  color: var(--text);
-}
-
-.beliefs li div {
+.beliefs li p {
+  margin: 0;
   font-size: 0.88rem;
   color: var(--muted);
 }
 
+.belief-header {
+  font-weight: 700;
+  color: var(--text) !important;
+  margin-bottom: 0.3rem !important;
+}
+
 .belief-num {
-  font-size: 0.7rem;
+  color: #c9a938;
   font-weight: 800;
-  letter-spacing: 0.06em;
-  color: var(--primary);
-  opacity: 0.7;
-  padding-top: 0.1rem;
-  flex-shrink: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  margin-right: 0.2rem;
 }
 
 .scripture {
@@ -679,7 +676,7 @@ a:hover {
     width: min(280px, 85vw);
     flex-direction: column;
     align-items: flex-start;
-    padding: 5rem 1.5rem 1.5rem;
+    padding: 3.75rem 1.5rem 1.5rem;
     gap: 0.75rem;
     background: rgba(11, 13, 17, 0.97);
     backdrop-filter: blur(20px);
