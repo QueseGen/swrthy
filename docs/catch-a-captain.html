@@ -22,27 +22,9 @@
         <a href="index.html#support">Support</a>
         <a href="index.html#contact">Contact</a>
       </nav>
-      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
     </div>
   </header>
-
-  <!-- Mobile drawer -->
-  <div class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="dialog" aria-modal="true">
-    <div class="drawer-header">
-      <a class="drawer-brand" href="index.html">
-        <img class="drawer-logo" src="logo.png" alt="SWRTHY logo" />
-        <span class="drawer-brand-name">SWRTHY</span>
-      </a>
-      <button class="drawer-close" id="drawerClose" aria-label="Close navigation">✕</button>
-    </div>
-    <nav class="drawer-nav" aria-label="Mobile primary">
-      <a href="index.html#mission">Mission</a>
-      <a href="index.html#projects">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="index.html#support">Support</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </div>
 
   <main>
 
@@ -217,24 +199,22 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const menuToggle = document.querySelector('.menu-toggle');
-    const drawer = document.getElementById('mobileDrawer');
-    const drawerClose = document.getElementById('drawerClose');
+    const nav = document.querySelector('.primary-nav');
 
-    function openDrawer() {
-      drawer.classList.add('open');
-      document.body.classList.add('nav-open');
-    }
-
-    function closeDrawer() {
-      drawer.classList.remove('open');
+    function closeNav() {
+      nav.classList.remove('open');
       document.body.classList.remove('nav-open');
+      menuToggle.textContent = '☰';
     }
 
-    menuToggle.addEventListener('click', openDrawer);
-    drawerClose.addEventListener('click', closeDrawer);
+    menuToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
 
-    drawer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeDrawer);
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeNav);
     });
   </script>
 </body>
