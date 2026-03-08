@@ -893,10 +893,16 @@ a:hover {
     display: none;
   }
 
-  /* Center brand in header; pin hamburger to right */
+  /* Logo left, SWRTHY centered, hamburger right */
   .header-inner {
     position: relative;
     justify-content: center;
+  }
+
+  /* Pull logo out of flow so only the SWRTHY text centers */
+  .brand-logo {
+    position: absolute;
+    left: 0;
   }
 
   .menu-toggle {
@@ -953,6 +959,7 @@ a:hover {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.08em;
+    color: #c9a938;
   }
 
   #mob-close {
