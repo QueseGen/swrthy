@@ -890,7 +890,7 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.22s ease, visibility 0.22s ease;
-    z-index: 9;
+    z-index: 12;
   }
 
   .primary-nav a {
