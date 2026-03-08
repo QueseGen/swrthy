@@ -19,12 +19,21 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: var(--font);
   color: var(--text);
   background: radial-gradient(circle at top, #0d111f 0%, var(--bg) 52%);
   line-height: 1.55;
+  overflow-x: hidden;
+}
+
+body.nav-open {
+  overflow: hidden;
 }
 
 a {
