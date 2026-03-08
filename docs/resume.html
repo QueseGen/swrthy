@@ -327,15 +327,20 @@
 
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.primary-nav');
+    function closeNav() {
+      nav.classList.remove('open');
+      document.body.classList.remove('nav-open');
+      menuToggle.textContent = '☰';
+    }
+
     menuToggle.addEventListener('click', () => {
       const isOpen = nav.classList.toggle('open');
       document.body.classList.toggle('nav-open', isOpen);
+      menuToggle.textContent = isOpen ? '✕' : '☰';
     });
+
     nav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        document.body.classList.remove('nav-open');
-      });
+      link.addEventListener('click', closeNav);
     });
   </script>
 </body>
