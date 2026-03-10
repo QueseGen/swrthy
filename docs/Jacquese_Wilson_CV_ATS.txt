@@ -1,0 +1,261 @@
+JACQUESE WILSON
+Full-Stack Software Engineer | Technology Entrepreneur
+Miami Gardens, FL 33056, USA | Open to International Relocation & Remote
+
+jacquesewilson@gmail.com | +1 (305) 981-6741
+GitHub: github.com/QueseGen
+LinkedIn: linkedin.com/in/jacquesewilson
+Portfolio: queseGen.github.io/swrthy
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+
+Full-Stack Software Engineer and technology entrepreneur with 7+ years of
+experience delivering production-grade applications across fintech, cloud
+infrastructure, mobile platforms, and healthcare technology. Founder and CEO of
+SWRTHY LLC, a minority-owned technology company. Founding Engineer of Catch A
+Captain, an on-demand boating marketplace live on iOS and Android. Expertise in
+Java, Python, Go, Flutter, Dart, JavaScript, TypeScript, Spring Boot, Node.js,
+GCP, AWS, Azure, Firestore, Stripe, Docker, Kubernetes, and CI/CD automation.
+Proven record reducing technical debt by 40%, managing 2M+ accounts at
+enterprise scale, and shipping mobile applications end-to-end from architecture
+to App Store launch. Open to international relocation and employer-sponsored
+work visas.
+
+================================================================================
+CORE COMPETENCIES
+================================================================================
+
+Full-Stack Web & Mobile Development
+Cloud Architecture (GCP, AWS, Azure)
+Flutter / iOS / Android Mobile Engineering
+RESTful API Design & Microservices Architecture
+Payment Systems Integration (Stripe)
+AI/ML Integration (Google Document AI)
+Real-Time Data & GPS Systems
+CI/CD Pipeline Design & Automation
+Enterprise Java & Spring Ecosystem
+Test-Driven Development (TDD / BDD)
+Startup Product Ownership & Founding Engineering
+Team Leadership & Technical Mentorship
+Cross-Functional & Remote-First Collaboration
+
+================================================================================
+WORK EXPERIENCE
+================================================================================
+
+Foundational Full-Stack Developer
+Auset X Technology, LLC | Miami, FL | May 2024 – Present
+Product: Catch A Captain — On-demand boating marketplace (iOS & Android)
+
+- Built Catch A Captain as the founding engineer, taking full ownership of
+  architecture, backend, mobile, and infrastructure from day one through
+  production launch on iOS App Store and Google Play Store.
+- Developed Flutter (Dart) mobile application for two user personas: passengers
+  booking boat trips and captains managing listings with real-time GPS tracking.
+- Engineered GCP cloud infrastructure: Cloud Firestore for real-time data sync,
+  Firebase Authentication, and Cloud Functions using a MEAN/GGRM stack with
+  encrypted communication and role-based security rules.
+- Built Go Fiber microservice integrating Google Document AI for automated
+  captain maritime license and ID verification via a purpose-built GUI dashboard.
+- Integrated Stripe end-to-end: passenger checkout with multiple payment methods
+  and captain payout account onboarding within the mobile app.
+- Established CI/CD deployment workflows for iOS (Xcode) and Android (Gradle);
+  mentored junior developers in Flutter, Xcode, and engineering best practices.
+
+Technologies: Flutter, Dart, GCP, Firebase, Firestore, Cloud Functions, Go,
+Go Fiber, Stripe, Node.js, Google Document AI, iOS, Android, Xcode, CI/CD
+
+--------------------------------------------------------------------------------
+
+Technical Support Specialist
+OpticalTel | Coral Gables, FL | November 2023 – May 2024
+
+- Served as technical liaison between end customers and development engineering
+  teams, routing bug reports and feature requests to the correct squads.
+- Delivered high-quality support across phone, email, and live chat channels.
+- Managed customer records, issue tracking, and resolution workflows via CRM,
+  contributing to reduced mean resolution time across the support team.
+
+--------------------------------------------------------------------------------
+
+Software Developer
+TechBeez Solutions | Remote | January 2023 – May 2023
+
+- Developed enterprise APIs and full-stack applications using Spring Framework
+  (Spring Boot, Spring MVC).
+- Designed and executed API test suites with JUnit, Rest-Assured, and Selenium.
+- Provisioned and managed MySQL databases on AWS; built Spring Data repositories
+  for data access, connection pooling, and schema migrations.
+- Built a Java/Selenium web scraper API using the Page Object Model pattern to
+  automate data gathering and form submission workflows.
+
+Technologies: Java, Spring Boot, Spring MVC, Selenium, MySQL, AWS RDS, JUnit,
+REST API, Page Object Model
+
+--------------------------------------------------------------------------------
+
+Software Engineer
+Novanta | Sarasota, FL | August 2021 – January 2022
+
+- Developed two new mobile UI features for surgical recording devices on
+  Microsoft Azure PaaS, adhering to strict reliability and usability standards.
+- Performed code reviews and enforced quality gates before production and
+  integration branch merges.
+- Authored and managed 10+ user stories in Azure DevOps, Azure Project, and
+  Microsoft Teams across cross-functional squads.
+- Developed features across a common infrastructure using C#, .NET, Golang,
+  React, Vue.js, Kotlin, and MongoDB.
+
+Technologies: Azure, Azure DevOps, C#, .NET, Golang, React, Vue.js, Kotlin,
+MongoDB
+
+--------------------------------------------------------------------------------
+
+Technology Associate
+American Express | Sunrise, FL | July 2019 – August 2021
+
+- Managed 2 million+ cardholder accounts within the enterprise financial
+  platform, ensuring data integrity, compliance, and quality of service.
+- Reduced department-level technical debt by over 40% through CI/CD pipeline
+  automation and tooling improvements.
+- Led cross-timezone incident management initiatives, coordinating global support
+  teams and executive stakeholders during critical system events.
+- Built Splunk observability dashboards using Regex to cross-reference and query
+  large-scale ecosystem data, accelerating root-cause identification.
+- Wrote, tested, and reviewed production code in Java, Python, Golang, Selenium,
+  Jenkins, and Rest-Assured; managed team delivery of Python/Flask applications.
+
+Technologies: Java, Python, Golang, Flask, Splunk, AWS, Jenkins, Kubernetes,
+PostgreSQL, CI/CD, Rest-Assured, Selenium
+
+--------------------------------------------------------------------------------
+
+Web & Customer Support Specialist
+Wix.com | Miami, FL | September 2017 – July 2019
+
+- Supported customers building websites for business and personal use with HTML,
+  CSS, and SEO best practices.
+- Gathered product usage data via Tableau; created presentations translating
+  insights into actionable product and education improvements.
+- Documented defects in JIRA; collaborated across HR and product teams on
+  community education programs.
+
+Technologies: HTML, CSS, SEO, Tableau, JIRA
+
+--------------------------------------------------------------------------------
+
+Junior Software Engineer
+American Express | Sunrise, FL | January 2017 – June 2017
+
+- Built enterprise-level Java and Spring MVC applications with RESTful services.
+- Developed Spring Batch jobs parsing flat-file, XML, and JSON data into
+  relational (PostgreSQL, MySQL) and non-relational (Cassandra, MongoDB)
+  databases.
+- Followed TDD practices with JUnit, Selenium, REGEX, and XPATH for full test
+  coverage.
+- Built front-end UIs with Bootstrap, HTML, and JavaScript; participated in peer
+  code reviews tracked in JIRA.
+
+Technologies: Java, Spring MVC, Spring Batch, Vue.js, Bootstrap, MongoDB,
+Cassandra, PostgreSQL, TDD, JUnit, Selenium
+
+================================================================================
+ENTREPRENEURIAL VENTURES
+================================================================================
+
+Founder & CEO — SWRTHY LLC | 2024 – Present
+- Founded minority-owned technology parent company building impact-first software
+  across food rescue, on-demand services, and inclusive digital tools.
+- Leading product roadmap, technical architecture, partnerships, and fundraising
+  across two active products and three planned ventures.
+
+Founder & Lead Engineer — Srplus (Community Food Rescue App) | Active
+- Built Flutter mobile platform connecting restaurants with community members to
+  reduce food waste: restaurants post surplus food, users claim and collect with
+  a unique pickup code.
+- Backend on GCP (Blaze) with Firebase Auth, rate limiting, and secure token
+  management.
+- Completed MVP Core: browse/post/claim pipeline, GPS location services, pickup
+  codes, confirm-pickup flow, and persistent auto-login.
+
+Technologies: Flutter, Dart, GCP, Firebase Auth, Firestore, Node.js, GPS
+
+================================================================================
+EDUCATION
+================================================================================
+
+Bachelor of Science — Technology
+Miami Dade College | Miami, FL | August 2019 – Present
+
+Associate of Arts — Business Administration
+Miami Dade College | Miami, FL | September 2015 – May 2017
+
+High School Diploma
+Miami Northwestern Senior High School | Miami, FL | June 2012
+
+================================================================================
+CERTIFICATIONS & LICENCES
+================================================================================
+
+CompTIA A+
+CompTIA Network+
+CompTIA Security+
+CCNA
+ITIL Foundation
+AWS Certification
+Google Analytics Certification
+Google AdWords Certification
+Splunk Core User
+Splunk Power User
+
+================================================================================
+TECHNICAL SKILLS
+================================================================================
+
+Programming Languages:
+Java, Python, Go (Golang), JavaScript, TypeScript, Dart, Kotlin, C#, Swift,
+SQL, Shell/Bash
+
+Frameworks & Libraries:
+Flutter, Spring Boot, Spring MVC, Spring Batch, Go Fiber, Node.js, Express.js,
+React, Vue.js, Next.js, Angular, Flask, Bootstrap
+
+Cloud & DevOps:
+Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure,
+Firebase, Docker, Kubernetes, Jenkins, CI/CD, Microservices, Azure DevOps
+
+Databases:
+Cloud Firestore, PostgreSQL, MySQL, MongoDB, Apache Cassandra, Redis, Oracle,
+SQL Server
+
+Mobile Development:
+Flutter (cross-platform iOS & Android), Xcode, Android Studio,
+Google Play Console, App Store Connect
+
+Testing & Tooling:
+JUnit, Selenium, Rest-Assured, Postman, TDD, BDD, Splunk, Git, Maven,
+JIRA, Tableau
+
+================================================================================
+LANGUAGES
+================================================================================
+
+English — Native / Expert
+Spanish — Conversational
+
+================================================================================
+ADDITIONAL INFORMATION
+================================================================================
+
+Work Authorization: Authorized to work in the United States for any employer.
+Open to international relocation and employer-sponsored work visas.
+
+Availability: Immediately available for full-time, contract, and remote-first
+roles. Flexible across time zones for distributed global teams.
+
+Portfolio & Projects: queseGen.github.io/swrthy
+
+References available upon request.
+Last updated: March 2026
