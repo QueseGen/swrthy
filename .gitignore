@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Source / branding assets (local only — not served on site)
+assets/
+
+# Private business documents (local only)
+docs/business/
+
+# Screenshot staging area (content is already in docs/cap/ and docs/srplus/)
+screensh/
