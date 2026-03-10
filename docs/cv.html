@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jacquese Wilson — Curriculum Vitae. Full-Stack Software Engineer & Entrepreneur. Available for international opportunities." />
+  <title>Jacquese Wilson — CV | SWRTHY</title>
+  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="icon" href="logo.png" />
+  <style>
+    /* ── CV-specific styles ── */
+    .cv-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    .cv-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.5rem;
+      align-items: start;
+      padding-bottom: 1.75rem;
+      border-bottom: 2px solid #c9a938;
+      margin-bottom: 2rem;
+    }
+
+    .cv-name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin: 0 0 0.2rem;
+    }
+
+    .cv-title {
+      font-size: 1.05rem;
+      color: #c9a938;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin: 0 0 0.3rem;
+    }
+
+    .cv-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .cv-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      text-align: right;
+      font-size: 0.875rem;
+    }
+
+    .cv-contact a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .cv-contact a:hover {
+      color: var(--primary);
+    }
+
+    .cv-section {
+      margin-bottom: 2.25rem;
+    }
+
+    .cv-section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c9a938;
+      border-bottom: 1px solid rgba(201, 169, 56, 0.25);
+      padding-bottom: 0.4rem;
+      margin: 0 0 1.1rem;
+    }
+
+    .cv-profile {
+      font-size: 0.97rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    /* Competencies */
+    .cv-competencies {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0.5rem 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cv-competencies li {
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .cv-competencies li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #c9a938;
+      font-size: 0.75rem;
+      top: 0.1em;
+    }
+
+    /* Experience entries */
+    .cv-entry {
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .cv-entry:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .cv-entry-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .cv-entry-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .cv-entry-org {
+      font-size: 0.9rem;
+      color: var(--primary);
+      margin: 0.15rem 0 0.1rem;
+      font-weight: 500;
+    }
+
+    .cv-entry-loc {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .cv-entry-dates {
+      font-size: 0.82rem;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding-top: 0.1rem;
+    }
+
+    .cv-label {
+      font-size: 0.83rem;
+      color: rgba(127, 227, 165, 0.75);
+      margin: 0.5rem 0 0.6rem;
+      font-style: italic;
+    }
+
+    .cv-list {
+      margin: 0.6rem 0 0.9rem;
+      padding-left: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .cv-list li {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .cv-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+
+    .cv-tags span {
+      font-size: 0.75rem;
+      background: rgba(127, 227, 165, 0.08);
+      color: var(--primary);
+      border: 1px solid rgba(127, 227, 165, 0.18);
+      border-radius: 6px;
+      padding: 0.2rem 0.55rem;
+    }
+
+    /* Achievements */
+    .cv-achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1rem;
+    }
+
+    .cv-achievement {
+      background: var(--panel);
+      border: 1px solid rgba(201, 169, 56, 0.15);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+    }
+
+    .cv-achievement-num {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #c9a938;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .cv-achievement p {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Skill table */
+    .cv-skill-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .cv-skill-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 0.75rem;
+      align-items: start;
+    }
+
+    .cv-skill-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+      padding-top: 0.25rem;
+    }
+
+    /* Education & certs */
+    .cv-edu-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .cv-edu-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-edu-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 0.1rem;
+    }
+
+    .cv-edu-inst {
+      font-size: 0.87rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .cv-cert-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .cv-cert {
+      font-size: 0.82rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 0.3rem 0.75rem;
+      color: var(--muted);
+    }
+
+    /* Languages */
+    .cv-lang-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .cv-lang {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .cv-lang strong {
+      color: var(--text);
+    }
+
+    /* Download bar */
+    .cv-dl-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 1.5rem;
+    }
+
+    .cv-note {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-top: 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 1.25rem;
+    }
+
+    @media (max-width: 620px) {
+      .cv-header {
+        grid-template-columns: 1fr;
+      }
+
+      .cv-contact {
+        text-align: left;
+      }
+
+      .cv-entry-head {
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+
+      .cv-skill-row {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+      }
+
+      .cv-edu-entry {
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+
+      .cv-achievements {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="logo.png" alt="SWRTHY logo" />
+        <span class="brand-name">SWRTHY</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="cv.html" aria-current="page">CV</a>
+        <a href="index.html#support">Support</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <nav id="mob-nav" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mob-head">
+      <a class="mob-brand" href="index.html">
+        <img src="logo.png" alt="SWRTHY logo" />
+        <span>SWRTHY</span>
+      </a>
+      <button id="mob-close" aria-label="Close navigation">✕</button>
+    </div>
+    <a href="index.html#mission">Mission</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="cv.html" aria-current="page">CV</a>
+    <a href="index.html#support">Support</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <main>
+    <div class="cv-wrap">
+
+      <!-- ── Header ── -->
+      <header class="cv-header">
+        <div>
+          <h1 class="cv-name">Jacquese Wilson</h1>
+          <p class="cv-title">Full-Stack Software Engineer &amp; Technology Entrepreneur</p>
+          <p class="cv-sub">Miami Gardens, FL 33056, USA &nbsp;·&nbsp; Open to International Relocation &amp; Remote</p>
+        </div>
+        <div class="cv-contact">
+          <a href="mailto:jacquesewilson@gmail.com">jacquesewilson@gmail.com</a>
+          <a href="tel:+13059816741">+1 (305) 981-6741</a>
+          <a href="https://github.com/QueseGen" target="_blank" rel="noopener">github.com/QueseGen</a>
+          <a href="https://www.linkedin.com/in/jacquesewilson" target="_blank" rel="noopener">linkedin.com/in/jacquesewilson</a>
+          <a href="https://queseGen.github.io/swrthy" target="_blank" rel="noopener">swrthy portfolio</a>
+        </div>
+      </header>
+
+      <div class="cv-dl-bar">
+        <a href="Resume.pdf" target="_blank" rel="noopener" class="button primary r-dl">Download Resume PDF</a>
+      </div>
+
+      <!-- ── Professional Profile ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Professional Profile</h2>
+        <p class="cv-profile">
+          Versatile Full-Stack Software Engineer and technology entrepreneur with 7+ years of progressive experience delivering production-grade applications across fintech, cloud infrastructure, mobile platforms, and healthcare technology. Founder and CEO of <strong style="color:var(--text)">SWRTHY LLC</strong>, a minority-owned technology parent company building impact-first software products across food rescue, on-demand services, and inclusive digital tools.
+        </p>
+        <p class="cv-profile" style="margin-top:0.85rem">
+          As a <strong style="color:var(--text)">Founding Engineer of Catch A Captain</strong> — South Florida's first on-demand boating marketplace, live on iOS and Android — demonstrated the full capability to architect, engineer, and ship a complex mobile platform from zero: designing GCP infrastructure, integrating Stripe payment flows, building AI-powered document verification, and guiding a junior team through production releases. Earlier career spans enterprise-scale systems at American Express (managing 2M+ accounts), surgical-environment UI development at Novanta, Spring/AWS engineering at TechBeez, and web platform work at Wix.com.
+        </p>
+        <p class="cv-profile" style="margin-top:0.85rem">
+          Equally comfortable leading greenfield products and refactoring legacy systems. Committed to writing clean, tested code and building teams with high trust, high output, and a culture of continuous learning. Authorised to work in the United States. Open to international relocation, visa-sponsored roles, and fully remote positions globally.
+        </p>
+      </section>
+
+      <!-- ── Key Competencies ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Key Competencies</h2>
+        <ul class="cv-competencies">
+          <li>Full-Stack Web &amp; Mobile Development</li>
+          <li>Cloud Architecture — GCP, AWS, Azure</li>
+          <li>Mobile Engineering — Flutter / iOS / Android</li>
+          <li>Microservices &amp; RESTful API Design</li>
+          <li>Payment Systems Integration (Stripe)</li>
+          <li>AI / ML Integration (Google Document AI)</li>
+          <li>Real-Time Data &amp; GPS Systems</li>
+          <li>CI/CD Pipeline Design &amp; Automation</li>
+          <li>Enterprise Java &amp; Spring Ecosystem</li>
+          <li>Test-Driven Development (TDD / BDD)</li>
+          <li>Startup Product Ownership &amp; Founding Eng</li>
+          <li>Team Leadership &amp; Technical Mentorship</li>
+          <li>Cross-Functional &amp; Remote Collaboration</li>
+          <li>Security — CompTIA A+/Network+/Security+, CCNA</li>
+        </ul>
+      </section>
+
+      <!-- ── Key Achievements ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Key Achievements</h2>
+        <div class="cv-achievements">
+          <div class="cv-achievement">
+            <div class="cv-achievement-num">40%+</div>
+            <p>Reduction in technical debt at American Express through CI/CD pipeline automation and process improvements</p>
+          </div>
+          <div class="cv-achievement">
+            <div class="cv-achievement-num">2M+</div>
+            <p>Financial accounts managed and supported during tenure at American Express</p>
+          </div>
+          <div class="cv-achievement">
+            <div class="cv-achievement-num">0 → Live</div>
+            <p>Built Catch A Captain end-to-end as Founding Engineer — from architecture to App Store &amp; Play Store launch</p>
+          </div>
+          <div class="cv-achievement">
+            <div class="cv-achievement-num">2 Apps</div>
+            <p>Founder &amp; lead engineer of two active mobile products under SWRTHY LLC across food rescue and on-demand boating</p>
+          </div>
+          <div class="cv-achievement">
+            <div class="cv-achievement-num">7+ yrs</div>
+            <p>Continuous professional growth across fintech, healthcare, SaaS, cloud, and consumer mobile sectors</p>
+          </div>
+          <div class="cv-achievement">
+            <div class="cv-achievement-num">10+</div>
+            <p>Industry certifications spanning cloud, networking, security, analytics, and digital marketing</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Professional Experience ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Professional Experience</h2>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Foundational Full-Stack Developer</h3>
+              <p class="cv-entry-org">Auset X Technology, LLC</p>
+              <p class="cv-entry-loc">Miami, FL, USA (Hybrid)</p>
+            </div>
+            <span class="cv-entry-dates">May 2024 – Present</span>
+          </div>
+          <p class="cv-label">Product: <a href="catch-a-captain.html" target="_blank" rel="noopener">Catch A Captain</a> — On-demand boating marketplace, live iOS &amp; Android (South Florida)</p>
+          <ul class="cv-list">
+            <li>Joined as the first and founding engineer, taking full ownership of architecture, backend, mobile, and infrastructure from day one through production launch on both iOS App Store and Google Play.</li>
+            <li>Designed and implemented a Flutter mobile application (Dart) supporting dual user personas — passengers booking trips and captains managing listings — with real-time GPS voyage tracking.</li>
+            <li>Engineered GCP cloud infrastructure: Firestore for real-time data sync, Firebase Authentication, and Cloud Functions using a MEAN/GGRM stack with encrypted communication and role-based security rules.</li>
+            <li>Built a custom Go Fiber microservice integrating Google Document AI for automated verification of captain maritime licences and identification documents, surfaced via a purpose-built GUI dashboard.</li>
+            <li>Integrated Stripe for end-to-end payment flows: passenger checkout with multiple payment methods and captain onboarding for payout accounts within the mobile app.</li>
+            <li>Established CI/CD workflows for continuous delivery to both iOS (Xcode) and Android (Gradle) platforms; authored internal engineering standards and mentored junior developers.</li>
+          </ul>
+          <div class="cv-tags">
+            <span>Flutter</span><span>Dart</span><span>GCP</span><span>Firestore</span><span>Firebase Auth</span><span>Cloud Functions</span><span>Go Fiber</span><span>Stripe</span><span>Google Document AI</span><span>Node.js</span><span>iOS</span><span>Android</span><span>Xcode</span>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Technical Support Specialist</h3>
+              <p class="cv-entry-org">OpticalTel</p>
+              <p class="cv-entry-loc">Coral Gables, FL, USA</p>
+            </div>
+            <span class="cv-entry-dates">Nov 2023 – May 2024</span>
+          </div>
+          <ul class="cv-list">
+            <li>Served as technical liaison between end customers and internal development teams, channelling bug reports, feature requests, and escalations to the correct engineering squads.</li>
+            <li>Delivered high-quality support across phone, email, and live chat channels maintaining empathy and professionalism under high-volume conditions.</li>
+            <li>Managed customer records, issue tracking, and resolution workflows via CRM software, reducing mean resolution time.</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Software Developer</h3>
+              <p class="cv-entry-org">TechBeez Solutions</p>
+              <p class="cv-entry-loc">Remote</p>
+            </div>
+            <span class="cv-entry-dates">Jan 2023 – May 2023</span>
+          </div>
+          <ul class="cv-list">
+            <li>Developed enterprise APIs and full-stack applications using the Spring Framework (Spring Boot, Spring MVC).</li>
+            <li>Designed and executed API test suites with JUnit, Rest-Assured, and Selenium following industry best practices.</li>
+            <li>Provisioned and managed MySQL databases on AWS; built Spring Data repositories for data access, connection pooling, and schema migrations.</li>
+            <li>Developed a Java/Selenium web-scraper API using the Page Object Model pattern to automate data gathering and form submission workflows.</li>
+          </ul>
+          <div class="cv-tags">
+            <span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>Selenium</span><span>MySQL</span><span>AWS</span><span>JUnit</span><span>REST API</span>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Software Engineer</h3>
+              <p class="cv-entry-org">Novanta</p>
+              <p class="cv-entry-loc">Sarasota, FL, USA</p>
+            </div>
+            <span class="cv-entry-dates">Aug 2021 – Jan 2022</span>
+          </div>
+          <ul class="cv-list">
+            <li>Translated business requirements into technical solutions within a PaaS environment on Microsoft Azure, delivering features across a regulated surgical recording product suite.</li>
+            <li>Designed and shipped two new mobile UI features for devices used in operating-room environments, adhering to strict reliability and usability standards.</li>
+            <li>Performed code reviews and enforced quality gates before production and integration-branch merges.</li>
+            <li>Authored and managed 10+ user stories via Azure DevOps, Azure Project, and Microsoft Teams, coordinating delivery across cross-functional squads.</li>
+            <li>Developed features across a common infrastructure using C#, .NET, Golang, React, Vue, Kotlin, and MongoDB.</li>
+          </ul>
+          <div class="cv-tags">
+            <span>Azure</span><span>C#</span><span>.NET</span><span>Golang</span><span>React</span><span>Vue.js</span><span>Kotlin</span><span>MongoDB</span><span>Azure DevOps</span>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Technology Associate</h3>
+              <p class="cv-entry-org">American Express</p>
+              <p class="cv-entry-loc">Sunrise, FL, USA</p>
+            </div>
+            <span class="cv-entry-dates">Jul 2019 – Aug 2021</span>
+          </div>
+          <ul class="cv-list">
+            <li>Managed 2 million+ cardholder accounts within the enterprise financial platform, ensuring data integrity, compliance, and quality of service at scale.</li>
+            <li>Automated repetitive processes and reduced department-level technical debt by over 40% through targeted CI/CD pipeline improvements and tooling enhancements.</li>
+            <li>Led cross-timezone incident management initiatives, coordinating global support teams and executive stakeholders during critical system events.</li>
+            <li>Built Splunk observability dashboards using Regex to cross-reference and query large-scale ecosystem data, accelerating root-cause identification.</li>
+            <li>Wrote, tested, and reviewed production code in Java, Python, Golang, Selenium, Jenkins, and Rest-Assured; managed team delivery of enterprise Python/Flask applications.</li>
+          </ul>
+          <div class="cv-tags">
+            <span>Java</span><span>Python</span><span>Golang</span><span>Flask</span><span>Splunk</span><span>AWS</span><span>Jenkins</span><span>Kubernetes</span><span>PostgreSQL</span><span>CI/CD</span>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Web &amp; Customer Support Specialist</h3>
+              <p class="cv-entry-org">Wix.com</p>
+              <p class="cv-entry-loc">Miami, FL, USA</p>
+            </div>
+            <span class="cv-entry-dates">Sep 2017 – Jul 2019</span>
+          </div>
+          <ul class="cv-list">
+            <li>Supported customers in building and optimising web presences for business and personal use, applying knowledge of HTML, SEO, and Wix platform internals.</li>
+            <li>Gathered product usage data via Tableau; created presentations translating insights into actionable product and education improvements.</li>
+            <li>Documented product defects in JIRA and collaborated across HR and product teams to drive community education programmes.</li>
+          </ul>
+          <div class="cv-tags">
+            <span>HTML</span><span>CSS</span><span>SEO</span><span>Tableau</span><span>JIRA</span>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Junior Software Engineer</h3>
+              <p class="cv-entry-org">American Express</p>
+              <p class="cv-entry-loc">Sunrise, FL, USA</p>
+            </div>
+            <span class="cv-entry-dates">Jan 2017 – Jun 2017</span>
+          </div>
+          <ul class="cv-list">
+            <li>Built enterprise-level applications using Java and Spring MVC; created RESTful services exposed via JavaScript and Vue.js front-ends.</li>
+            <li>Developed Spring Batch jobs to parse flat-file, XML, and JSON data into relational (SQL) and non-relational (Cassandra, MongoDB) databases.</li>
+            <li>Followed strict TDD practices throughout: JUnit, Selenium, REGEX, and XPATH for comprehensive test coverage.</li>
+            <li>Built front-end UIs using Bootstrap, HTML, and JavaScript; participated in peer code reviews tracked in JIRA.</li>
+          </ul>
+          <div class="cv-tags">
+            <span>Java</span><span>Spring MVC</span><span>Spring Batch</span><span>Vue.js</span><span>Bootstrap</span><span>MongoDB</span><span>Cassandra</span><span>TDD</span><span>JUnit</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Entrepreneurial Ventures ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Entrepreneurial Ventures</h2>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Founder &amp; CEO — SWRTHY LLC</h3>
+              <p class="cv-entry-org">SWRTHY LLC (Minority-Owned Technology Company)</p>
+              <p class="cv-entry-loc">Miami Gardens, FL, USA</p>
+            </div>
+            <span class="cv-entry-dates">2024 – Present</span>
+          </div>
+          <ul class="cv-list">
+            <li>Founded SWRTHY LLC as a mission-driven, minority-owned technology parent company operating on the principle of "Worthy Over Cheap" — building software with long-term community impact over short-term profit.</li>
+            <li>Leading product roadmap, technical direction, partnerships, and fundraising across two active software products and three planned ventures.</li>
+            <li>Established company mission, core beliefs, brand identity, and public-facing web presence at queseGen.github.io/swrthy.</li>
+          </ul>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <div>
+              <h3 class="cv-entry-title">Founder &amp; Lead Engineer — Srplus</h3>
+              <p class="cv-entry-org">SWRTHY LLC</p>
+            </div>
+            <span class="cv-entry-dates">Active Development</span>
+          </div>
+          <p class="cv-label">Community Food Rescue Mobile Application</p>
+          <ul class="cv-list">
+            <li>Designed and built a Flutter mobile platform connecting restaurants with nearby community members to reduce food waste — restaurants post surplus food, customers claim and collect with a unique pickup code.</li>
+            <li>Deployed backend to Google Cloud (Blaze) with Firebase Auth, rate limiting, and secure token management.</li>
+            <li>Completed MVP Core: full browse/post/claim food pipeline, GPS/location services, pickup-code flow, confirm-pickup, and persistent auto-login — end-to-end on both frontend and backend.</li>
+          </ul>
+          <div class="cv-tags">
+            <span>Flutter</span><span>Dart</span><span>GCP</span><span>Firebase Auth</span><span>Firestore</span><span>Node.js</span><span>GPS Services</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Education ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Education</h2>
+
+        <div class="cv-edu-entry">
+          <div>
+            <p class="cv-edu-title">Bachelor of Science — Technology</p>
+            <p class="cv-edu-inst">Miami Dade College &nbsp;·&nbsp; Miami, FL, USA</p>
+          </div>
+          <span class="cv-entry-dates">Aug 2019 – Present</span>
+        </div>
+
+        <div class="cv-edu-entry">
+          <div>
+            <p class="cv-edu-title">Associate of Arts — Business Administration</p>
+            <p class="cv-edu-inst">Miami Dade College &nbsp;·&nbsp; Miami, FL, USA</p>
+          </div>
+          <span class="cv-entry-dates">Sep 2015 – May 2017</span>
+        </div>
+
+        <div class="cv-edu-entry">
+          <div>
+            <p class="cv-edu-title">High School Diploma</p>
+            <p class="cv-edu-inst">Miami Northwestern Senior High School &nbsp;·&nbsp; Miami, FL, USA</p>
+          </div>
+          <span class="cv-entry-dates">Aug 2008 – Jun 2012</span>
+        </div>
+      </section>
+
+      <!-- ── Certifications ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Certifications &amp; Licences</h2>
+        <div class="cv-cert-grid">
+          <span class="cv-cert">CompTIA A+</span>
+          <span class="cv-cert">CompTIA Network+</span>
+          <span class="cv-cert">CompTIA Security+</span>
+          <span class="cv-cert">CCNA</span>
+          <span class="cv-cert">ITIL Foundation</span>
+          <span class="cv-cert">AWS Certification</span>
+          <span class="cv-cert">Google Analytics</span>
+          <span class="cv-cert">Google AdWords</span>
+          <span class="cv-cert">Splunk Core User</span>
+          <span class="cv-cert">Splunk Power User</span>
+        </div>
+      </section>
+
+      <!-- ── Technical Skills ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Technical Skills</h2>
+        <div class="cv-skill-rows">
+          <div class="cv-skill-row">
+            <span class="cv-skill-label">Languages</span>
+            <div class="cv-tags">
+              <span>Java</span><span>Python</span><span>Go</span><span>JavaScript</span><span>TypeScript</span><span>Dart</span><span>Kotlin</span><span>C#</span><span>Swift</span><span>SQL</span><span>Shell / Bash</span>
+            </div>
+          </div>
+          <div class="cv-skill-row">
+            <span class="cv-skill-label">Frameworks</span>
+            <div class="cv-tags">
+              <span>Flutter</span><span>Spring Boot</span><span>Spring MVC</span><span>Spring Batch</span><span>Go Fiber</span><span>Node.js</span><span>Express.js</span><span>React</span><span>Vue.js</span><span>Next.js</span><span>Angular</span><span>Flask</span><span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="cv-skill-row">
+            <span class="cv-skill-label">Cloud &amp; DevOps</span>
+            <div class="cv-tags">
+              <span>GCP</span><span>AWS</span><span>Azure</span><span>Firebase</span><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>CI/CD</span><span>Microservices</span><span>Azure DevOps</span>
+            </div>
+          </div>
+          <div class="cv-skill-row">
+            <span class="cv-skill-label">Databases</span>
+            <div class="cv-tags">
+              <span>Firestore</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Cassandra</span><span>Redis</span><span>Oracle</span><span>SQL Server</span>
+            </div>
+          </div>
+          <div class="cv-skill-row">
+            <span class="cv-skill-label">Testing &amp; Tooling</span>
+            <div class="cv-tags">
+              <span>JUnit</span><span>Selenium</span><span>Rest-Assured</span><span>Postman</span><span>TDD / BDD</span><span>Splunk</span><span>Git</span><span>Maven</span><span>Jira</span><span>Tableau</span>
+            </div>
+          </div>
+          <div class="cv-skill-row">
+            <span class="cv-skill-label">Platforms</span>
+            <div class="cv-tags">
+              <span>iOS (Xcode)</span><span>Android (Gradle)</span><span>Google Play Console</span><span>App Store Connect</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Languages ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Languages</h2>
+        <div class="cv-lang-row">
+          <span class="cv-lang"><strong>English</strong> — Native / Expert</span>
+          <span class="cv-lang"><strong>Spanish</strong> — Conversational</span>
+        </div>
+      </section>
+
+      <!-- ── Additional ── -->
+      <section class="cv-section">
+        <h2 class="cv-section-title">Additional Information</h2>
+        <ul class="cv-list" style="padding-left:1rem">
+          <li><strong style="color:var(--text)">Work Authorisation:</strong> Authorised to work in the United States for any employer. Open to employer-sponsored international relocation and work visas.</li>
+          <li><strong style="color:var(--text)">Availability:</strong> Available for full-time, contract, and remote-first roles. Flexible across time zones for distributed teams.</li>
+          <li><strong style="color:var(--text)">Interests:</strong> Impact technology, financial inclusion, food security, community-driven software, open-source, and minority entrepreneurship.</li>
+          <li><strong style="color:var(--text)">Portfolio &amp; Projects:</strong> Full project details, screenshots, and live demos available at <a href="index.html#projects">swrthy portfolio</a>.</li>
+        </ul>
+      </section>
+
+      <p class="cv-note">References available upon request &nbsp;·&nbsp; Last updated March 2026</p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SWRTHY. Built for community and impact.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    var tog = document.querySelector('.menu-toggle');
+    var mob = document.getElementById('mob-nav');
+    var cls = document.getElementById('mob-close');
+
+    function openMob() { mob.classList.add('open'); mob.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+    function closeMob() { mob.classList.remove('open'); mob.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+
+    tog.onclick = openMob;
+    cls.onclick = closeMob;
+    mob.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMob); });
+  </script>
+</body>
+</html>
